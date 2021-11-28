@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".RegisterActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/register_toolbar"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="Chat App"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/fredoka_one" />
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:background="@drawable/form_style"
+        android:hint="Nama"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtNama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/form_style"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textMultiLine|textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/form_style"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textMultiLine|textPassword"
+        android:padding="5dp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:background="#595308"
+        android:text="Create Account"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

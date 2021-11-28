@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/custom_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/user_default" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_240"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chat_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="User name"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_user_last_seen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last seen"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/button_select_picture"-->
+            <!--android:layout_width="@dimen/dp_30"-->
+            <!--android:layout_height="@dimen/dp_30"-->
+            <!--android:layout_marginTop="@dimen/dp_12"-->
+            <!--android:background="#00000000"-->
+            <!--android:src="@drawable/ic_add_photo_white" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

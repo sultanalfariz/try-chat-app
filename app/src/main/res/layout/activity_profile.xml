@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/display_user_image_profile"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/display_user_name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/display_user_image_profile"
+        android:text="Display Username"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/display_user_status_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/display_user_name_profile"
+        android:text="Display User Status" />
+
+    <Button
+        android:id="@+id/btn_send_friend_req"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/display_user_status_profile"
+        android:layout_marginTop="140dp"
+        android:padding="5dp"
+        android:background="#4aa630"
+        android:text="Add Friend"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btn_decline_friend_req"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_send_friend_req"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:background="#e65035"
+        android:text="Decline"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
